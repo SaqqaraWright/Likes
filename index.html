@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav flex">
+            <header class=navHeader>Network</header>
+        </div>
+        <header>Your Feed</header>
+        <div class="yourFeed flexStart">
+            <!--header was prevously a child of the submain however moved it to being a child of the main and therefore a sibling of submain and nav-->
+            <!--this is the submain category-->
+            <div class="leftCol">
+                <!--Left Column starts here-->
+                <div class="jamesDoe border">
+                    <img class="img-med" src="profile_avatar_icon copy.png" alt="avatar image">
+                    <div class="jdContent">
+                        <a class="linkAdj" href="www.Google.com">Add an avatar</a>
+                        <strong><p id="largeFont">James Doe</p></strong>
+                    </div>
+                </div>
+            </div>
+            <!--End of Left Column-->
+            <div class="rightCol">
+                <!--Right Column starts here-->
+                <div class="feedInsert border">
+                    <div class="feedContent flex">
+                        <h2>Neil M</h2>
+                        <div class="likes flex">
+                            <p><span id="neilLikes">9</span> like(s)</p>
+                            <button onclick="addLikes(neilLikes)" class="btn">Like</button>
+                        </div>
+                    </div>
+                    <p>I just set up this new discord bot, let me know what you all think. <a
+                            href="www.google.com">link</a></p>
+                </div>
+                <div class="feedInsert border">
+                    <div class="feedContent flex">
+                        <h2>Nichole K</h2>
+                        <div class="likes flex">
+                            <!--added extra div for likes count and like button-->
+                            <p><span id="nicholeLikes">12</span> like(s)</p>
+                            <button onclick="addLikes(nicholeLikes)" class="btn">Like</button>
+                        </div>
+                    </div>
+                    <p>Just finished my <a href="www.google.com">next comic</a>, check it out.</p>
+                </div>
+                <div class="feedInsert border">
+                    <div class="feedContent flex">
+                        <h2>Jim R</h2>
+                        <div class="likes flex">
+                            <p><span id="jimLikes">9</span> like(s)</p>
+                            <button onclick="addLikes(jimLikes)" class="btn">Like</button>
+                        </div>
+                    </div>
+                    <p>I can't stop listening to the <a href="www.google.com">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+            <!--End of Right Column-->
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
